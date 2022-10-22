@@ -1,25 +1,42 @@
 "use strict";
 
 const gridContainer = document.querySelector(".grid-container");
+const rectInp = document.querySelector(".rectangle-input");
+const numberFormEl = document.querySelector(".number-form");
 
-const sixteenGrid = () => {
-  for (let i = 1; i <= 256; i++) {
+// const sixteenGrid = () => {
+//   for (let i = 1; i <= 256; i++) {
+//     const rectEl = document.createElement("div");
+//     rectEl.setAttribute("data-id", "box");
+//     rectEl.classList.add("rect");
+//     gridContainer.appendChild(rectEl);
+//   }
+// };
+
+// sixteenGrid();
+
+gridContainer.addEventListener("mouseover", function (e) {
+  const boxEl = e.target.closest("div");
+  if (!boxEl) return;
+  //   console.log(boxEl);
+  //   console.log("box!!");
+  boxEl.style.backgroundColor = "blue";
+});
+
+numberFormEl.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const formValue = +rectInp.value;
+  console.log(formValue);
+  gridContainer.innerHTML = "";
+  for (let i = 1; i <= formValue * formValue; i++) {
     const rectEl = document.createElement("div");
     rectEl.setAttribute("data-id", "box");
     rectEl.classList.add("rect");
     gridContainer.appendChild(rectEl);
   }
-};
-
-sixteenGrid();
-
-gridContainer.addEventListener("mouseover", function (e) {
-  const boxEl = e.target.closest("div");
-  if (!boxEl) return;
-  console.log(boxEl);
-  console.log("box!!");
-  boxEl.style.backgroundColor = "blue";
 });
+
+// console.log(getFormValue());
 
 // const twentyFourGrid = () => {
 //   for (let i = 1; i <= 576; i++) {
