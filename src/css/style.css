@@ -1,0 +1,14 @@
+.square {
+  height: 2.4rem;
+  width: 2.4rem;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.app-title {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: 0.3rem;
+  color: #ff143fca;
+}

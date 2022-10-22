@@ -16,8 +16,29 @@ html {
   font-size: 62.5%;
 }
 
+/* Layout */
+
 body {
   line-height: 1;
   font-weight: 400;
   color: #333;
+  background-color: #fff;
+  height: 100vh;
+  overscroll-behavior-y: none;
+  padding: 2.5rem;
+  display: flex;
+}
+
+.sidebar {
+  flex-basis: 30rem;
+  padding: 3rem 3.5rem 4rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #b4f8c8;
+}
+
+.grid-container {
+  flex: 1;
+  height: 100%;
+  background-color: #a0e7e5;
 }
