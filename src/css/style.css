@@ -1,8 +1,17 @@
 .square {
-  height: 2.4rem;
-  width: 2.4rem;
+  /* height: 2.4rem;
+  width: 2.4rem; */
+  height: 2.8rem;
+  width: 5rem;
   background-color: #fff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.small-square {
+  height: 1.6rem;
+  width: 2.7rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: #fff;
 }
 
 .app-title {
@@ -11,4 +20,16 @@
   font-size: 2.8rem;
   letter-spacing: 0.3rem;
   color: #ff143fca;
+}
+
+.grid-container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  /* grid-template-columns: repeat(auto-fill, 3rem); */
+  /* grid-template-columns: repeat(16, minmax(3px, 3rem)); */
+  grid-template-columns: repeat(16, minmax(0.5rem, 100rem));
+  /* grid-template-columns: repeat(24, minmax(0.5rem, 100rem)); */
 }
