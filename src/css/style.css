@@ -63,7 +63,7 @@ span {
   font-size: 1.3rem;
 }
 
-.grid-sizing-form {
+.form {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.5rem 2.5rem;
