@@ -26,9 +26,12 @@ gridContainer.addEventListener("mouseover", function (e) {
 numberFormEl.addEventListener("submit", (e) => {
   e.preventDefault();
   const formValue = +rectInp.value;
+  const numOfRect = formValue * formValue;
   console.log(formValue);
   gridContainer.innerHTML = "";
-  for (let i = 1; i <= formValue * formValue; i++) {
+  for (let i = 1; i <= numOfRect; i++) {
+    // gridContainer.style.gridTemplateColumns = `repeat(${formValue}, minmax(0.5rem, 1fr)`;
+    gridContainer.style.gridTemplateColumns = `repeat(${formValue}, minmax(0.1rem, 1fr)`;
     const rectEl = document.createElement("div");
     rectEl.setAttribute("data-id", "box");
     rectEl.classList.add("rect");
