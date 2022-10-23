@@ -47,3 +47,39 @@
   /* grid-template-columns: repeat(16, minmax(0.5rem, 100rem)); */
   /* grid-template-columns: repeat(24, minmax(0.5rem, 100rem)); */
 }
+
+.form-heading {
+  font-family: "Kalam", cursive;
+  margin-bottom: 1.2rem;
+  font-size: 2.2rem;
+}
+
+label {
+  font-size: 1.9rem;
+  font-family: "Kalam", cursive;
+}
+
+.number-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem 2.5rem;
+  height: fit-content;
+  border-radius: 0.3rem;
+  background-color: #a3e3b6;
+  padding: 1.5rem 2.75rem;
+}
+
+.form__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input {
+  width: 30%;
+  padding: 0.3rem 1.1rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #e1fce9;
+}

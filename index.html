@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/css/general.css" />
@@ -23,18 +23,33 @@
   <body>
     <div class="sidebar">
       <h1 class="app-title">Etch-A-Glow</h1>
-      <form action="" class="number-form">
-        <label for="grid rectangles"
-          >Number of rectangles X/Y axis (e.g. '16' = 16x16):</label
-        >
-        <input
-          type="number"
-          name="grid-rectangles"
-          class="rectangle-input"
-          min="1"
-          max="100"
-        />
-      </form>
+      <div class="sizing-container">
+        <form action="" class="number-form">
+          <h2 class="form-heading">Grid Sizing:</h2>
+          <div class="form__row">
+            <label for="grid rectangles">X/Y Cell Ct.</label>
+            <input
+              type="number"
+              name="grid-rectangles"
+              class="form-input rectangle-input"
+              min="1"
+              max="100"
+              placeholder="16"
+            />
+          </div>
+          <div class="form__row">
+            <label for="grid rectangles">Gap</label>
+            <input
+              type="number"
+              name="grid-gap"
+              class="form-input gap-input"
+              min="0"
+              max="5"
+              placeholder="1"
+            />
+          </div>
+        </form>
+      </div>
     </div>
     <section class="grid-container"></section>
   </body>
