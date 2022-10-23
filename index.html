@@ -23,11 +23,11 @@
   <body>
     <div class="sidebar">
       <h1 class="app-title">Etch-A-Glow</h1>
-      <div class="sizing-container">
+      <div class="container">
         <form action="" class="grid-sizing-form">
           <h2 class="form-heading">Grid Sizing:</h2>
           <div class="form__row">
-            <label for="grid rectangles">X/Y Cell Ct.</label>
+            <label for="grid rectangles">X/Y Ct. <span>(1-100)</span></label>
             <input
               type="number"
               name="grid-rectangles"
@@ -38,7 +38,7 @@
             />
           </div>
           <div class="form__row">
-            <label for="grid rectangles">Gap</label>
+            <label for="grid rectangles">Gap <span>(0-5)</span></label>
             <input
               type="number"
               name="grid-gap"
@@ -46,6 +46,29 @@
               min="0"
               max="5"
               placeholder="1"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <form action="" class="grid-sizing-form">
+          <h2 class="form-heading">Color Palette:</h2>
+          <div class="form__row">
+            <label for="cell color">Cell Color</label>
+            <input
+              type="color"
+              value="#39FF14"
+              name="cell-color"
+              class="form-input cell-color-input"
+            />
+          </div>
+          <div class="form__row">
+            <label for="gap color">Gap Color</label>
+            <input
+              type="color"
+              value="#a0e7e5"
+              name="gap-color"
+              class="form-input gap-color-input"
             />
           </div>
         </form>

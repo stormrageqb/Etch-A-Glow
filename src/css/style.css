@@ -59,6 +59,10 @@ label {
   font-family: "Kalam", cursive;
 }
 
+span {
+  font-size: 1.3rem;
+}
+
 .grid-sizing-form {
   display: grid;
   grid-template-columns: 1fr;
@@ -66,7 +70,7 @@ label {
   height: fit-content;
   border-radius: 0.3rem;
   background-color: #a3e3b6;
-  padding: 1.5rem 2.75rem;
+  padding: 1.5rem 1.8rem;
 }
 
 .form__row {
