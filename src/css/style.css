@@ -59,7 +59,7 @@ label {
   font-family: "Kalam", cursive;
 }
 
-.number-form {
+.grid-sizing-form {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.5rem 2.5rem;
