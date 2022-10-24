@@ -65,7 +65,8 @@ span {
   font-size: 1.3rem;
 }
 
-.form {
+.form,
+.glow-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.7rem 2.5rem;
@@ -89,4 +90,12 @@ span {
   border: none;
   border-radius: 0.2rem;
   background-color: #e1fce9;
+}
+
+/* Separate form to enable glow toggle - remove padding-top */
+.glow-heading {
+  margin-bottom: 1.9rem;
+}
+.outer-glow-form {
+  padding-top: 0;
 }

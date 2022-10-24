@@ -14,16 +14,43 @@ const colorPaletteForm = document.querySelector('.grid-color-form');
 const defaultColor = '#ff143fca';
 let cellColor;
 
+// Cell Glow
+const innerGlow = document.querySelector('.inner-glow-input');
+const outerGlow = document.querySelector('.outer-glow-input');
+const innerGlowForm = document.querySelector('.inner-glow-form');
+const outerGlowForm = document.querySelector('.outer-glow-form');
+let innerGlowValue;
+let outerGlowValue;
+const defaultShadow = `0 3px 10px rgb(0 0 0 / 0.2)`;
+let toggle;
+
 gridContainer.addEventListener('mouseover', function (e) {
   const boxEl = e.target.closest('div');
   if (!boxEl) return;
   boxEl.style.backgroundColor = defaultColor;
   boxEl.style.backgroundColor = `${cellColor}`;
+  if (toggle) {
+    boxEl.style.boxShadow = `inset 0 0 1.2rem ${innerGlowValue}`;
+  } else {
+    boxEl.style.boxShadow = `0 0 1.2rem ${outerGlowValue}`;
+  }
 });
 
 colorPaletteForm.addEventListener('input', function () {
   cellColor = rectColor.value;
   console.log(cellColor);
+});
+
+innerGlowForm.addEventListener('input', function () {
+  innerGlowValue = innerGlow.value;
+  toggle = true;
+  console.log(innerGlowValue);
+});
+
+outerGlowForm.addEventListener('input', function () {
+  outerGlowValue = outerGlow.value;
+  toggle = false;
+  console.log(outerGlowValue);
 });
 
 gridSizingForm.addEventListener('input', e => {
