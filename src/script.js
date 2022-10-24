@@ -19,9 +19,10 @@ const innerGlow = document.querySelector('.inner-glow-input');
 const outerGlow = document.querySelector('.outer-glow-input');
 const innerGlowForm = document.querySelector('.inner-glow-form');
 const outerGlowForm = document.querySelector('.outer-glow-form');
+const disableGlowCheckbox = document.querySelector('input[name=checkbox]');
+let defaultShadow;
 let innerGlowValue;
 let outerGlowValue;
-const defaultShadow = `0 3px 10px rgb(0 0 0 / 0.2)`;
 let toggle;
 
 gridContainer.addEventListener('mouseover', function (e) {
@@ -34,6 +35,7 @@ gridContainer.addEventListener('mouseover', function (e) {
   } else {
     boxEl.style.boxShadow = `0 0 1.2rem ${outerGlowValue}`;
   }
+  boxEl.style.boxShadow = defaultShadow;
 });
 
 colorPaletteForm.addEventListener('input', function () {
@@ -41,16 +43,29 @@ colorPaletteForm.addEventListener('input', function () {
   console.log(cellColor);
 });
 
-innerGlowForm.addEventListener('input', function () {
-  innerGlowValue = innerGlow.value;
-  toggle = true;
-  console.log(innerGlowValue);
-});
+const changeGlow = function () {
+  innerGlowForm.addEventListener('input', function () {
+    innerGlowValue = innerGlow.value;
+    toggle = true;
+    console.log(innerGlowValue);
+  });
 
-outerGlowForm.addEventListener('input', function () {
-  outerGlowValue = outerGlow.value;
-  toggle = false;
-  console.log(outerGlowValue);
+  outerGlowForm.addEventListener('input', function () {
+    outerGlowValue = outerGlow.value;
+    toggle = false;
+    console.log(outerGlowValue);
+  });
+};
+
+changeGlow();
+
+disableGlowCheckbox.addEventListener('change', function () {
+  if (this.checked) {
+    console.log('checked!!');
+    defaultShadow = `0 3px 10px rgb(0 0 0 / 0.2)`;
+  } else {
+    defaultShadow = changeGlow();
+  }
 });
 
 gridSizingForm.addEventListener('input', e => {

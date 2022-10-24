@@ -99,3 +99,8 @@ span {
 .outer-glow-form {
   padding-top: 0;
 }
+
+.checkbox {
+  accent-color: #e1fce9;
+  transform: scale(1.35);
+}
