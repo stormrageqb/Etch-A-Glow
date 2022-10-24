@@ -19,7 +19,7 @@ const innerGlow = document.querySelector('.inner-glow-input');
 const outerGlow = document.querySelector('.outer-glow-input');
 const innerGlowForm = document.querySelector('.inner-glow-form');
 const outerGlowForm = document.querySelector('.outer-glow-form');
-const disableGlowCheckbox = document.querySelector('input[name=checkbox]');
+const disableGlowCheckbox = document.querySelector('input[name=checkbox-glow]');
 let defaultShadow;
 let innerGlowValue;
 let outerGlowValue;

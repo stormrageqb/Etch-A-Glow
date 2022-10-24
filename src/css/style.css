@@ -66,7 +66,8 @@ span {
 }
 
 .form,
-.glow-container {
+.glow-container,
+.color-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.7rem 2.5rem;
@@ -92,8 +93,13 @@ span {
   background-color: #e1fce9;
 }
 
+.cell-color-btm {
+  padding-bottom: 0.7rem;
+}
+
 /* Separate form to enable glow toggle - remove padding-top */
-.glow-heading {
+.glow-heading,
+.color-heading {
   margin-bottom: 1.9rem;
 }
 .outer-glow-form {

@@ -50,10 +50,10 @@
           </div>
         </form>
       </div>
-      <div class="container">
-        <form action="" class="form grid-color-form">
-          <h2 class="form-heading">Color Palette:</h2>
-          <div class="form__row">
+      <div class="color-container">
+        <form action="" class="grid-color-form">
+          <h2 class="form-heading color-heading">Color Palette:</h2>
+          <div class="form__row cell-color-btm">
             <label for="cell color">Cell Color</label>
             <input
               type="color"
@@ -69,6 +69,16 @@
               value="#a0e7e5"
               name="gap-color"
               class="form-input gap-color-input"
+            />
+          </div>
+        </form>
+        <form action="" class="toggle-random-color">
+          <div class="form__row">
+            <label for="cell random color">Rainbow</label>
+            <input
+              type="checkbox"
+              name="checkbox-randomize"
+              class="form-input checkbox"
             />
           </div>
         </form>
@@ -102,7 +112,7 @@
             <label for="cell outer color">Disable Glow</label>
             <input
               type="checkbox"
-              name="checkbox"
+              name="checkbox-glow"
               class="form-input checkbox"
             />
           </div>
