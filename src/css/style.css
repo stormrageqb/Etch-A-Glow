@@ -19,6 +19,8 @@
   /* width: 0.21rem; */
   background-color: #fff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  /* box-shadow: inset 0 0 1.2rem #f8a100; */
+  /* box-shadow: 0 0 1.2rem #f8a100; */
 }
 
 .small-rect {
@@ -29,7 +31,7 @@
 }
 
 .app-title {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   text-align: center;
   font-size: 2.8rem;
   letter-spacing: 0.3rem;
@@ -49,14 +51,14 @@
 }
 
 .form-heading {
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
   margin-bottom: 1.2rem;
   font-size: 2.2rem;
 }
 
 label {
   font-size: 1.9rem;
-  font-family: "Kalam", cursive;
+  font-family: 'Kalam', cursive;
 }
 
 span {
@@ -66,11 +68,12 @@ span {
 .form {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem 2.5rem;
+  gap: 0.7rem 2.5rem;
   height: fit-content;
   border-radius: 0.3rem;
   background-color: #a3e3b6;
   padding: 1.5rem 1.8rem;
+  align-items: center;
 }
 
 .form__row {
