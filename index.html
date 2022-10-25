@@ -15,8 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./src/css/general.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script defer src="./src/script.js"></script>
     <title>Etch-A-Glow</title>
   </head>
@@ -117,6 +125,18 @@
             />
           </div>
         </form>
+      </div>
+
+      <div class="options-container">
+        <h2 class="form-heading options-heading">Options:</h2>
+        <div class="form__row">
+          <label for="cell inner glow">Save PDF</label>
+          <button class="btn save-btn">Save</button>
+        </div>
+        <div class="form__row">
+          <label for="cell outer color">Reset Grid</label>
+          <button class="btn reset-btn">Reset</button>
+        </div>
       </div>
     </div>
     <section class="grid-container"></section>

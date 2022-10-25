@@ -43,3 +43,19 @@ body {
   height: 100%;
   background-color: #a0e7e5;
 }
+
+.btn {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-family: 'Kalam', cursive;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #e1fce9;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #b4f8c8;
+}

@@ -28,6 +28,14 @@ let outerGlowValue;
 let toggle;
 let toggleRainbow;
 
+// Options
+const saveBtn = document.querySelector('.save-btn');
+const resetBtn = document.querySelector('.reset-btn');
+
+resetBtn.addEventListener('click', function () {
+  window.location.reload();
+});
+
 gridContainer.addEventListener('mouseover', function (e) {
   const boxEl = e.target.closest('div');
   if (!boxEl) return;
@@ -128,4 +136,14 @@ const getRandomColor = function (num) {
 };
 
 getRandomColor(255);
-console.log(getRandomColor(255));
+// console.log(getRandomColor(255));
+
+const bodyEl = document.querySelector('body');
+const options = {
+  filename: 'etch-a-glow-art.pdf',
+  jsPDF: { unit: 'in', format: 'a4', orientation: 'landscape' },
+};
+
+saveBtn.addEventListener('click', function () {
+  html2pdf().set(options).from(bodyEl).save();
+});

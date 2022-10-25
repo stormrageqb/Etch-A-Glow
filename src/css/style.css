@@ -11,6 +11,7 @@
   /* width: 5rem; */
 
   width: 100%;
+  /* border-radius: 100%; */
   /* max-width: 5rem; */
   /* width: 2.5rem;
   width: 1.5rem;
@@ -23,16 +24,10 @@
   /* box-shadow: 0 0 1.2rem #f8a100; */
 }
 
-.small-rect {
-  height: 1.6rem;
-  width: 2.7rem;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  background-color: #fff;
-}
-
 .app-title {
   font-family: 'Shrikhand', cursive;
   text-align: center;
+  text-shadow: 0.1rem 0.1rem #fff;
   font-size: 2.8rem;
   letter-spacing: 0.3rem;
   color: #ff143fca;
@@ -67,7 +62,8 @@ span {
 
 .form,
 .glow-container,
-.color-container {
+.color-container,
+.options-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.7rem 2.5rem;
@@ -110,3 +106,17 @@ span {
   accent-color: #e1fce9;
   transform: scale(1.35);
 }
+
+.print-btn {
+  padding-left: 1.67rem;
+  padding-right: 1.67rem;
+}
+
+/* @media print {
+  .sidebar * {
+    display: none;
+  }
+  .grid-container * {
+    display: block;
+  }
+} */
