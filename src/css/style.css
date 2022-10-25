@@ -47,7 +47,7 @@
 
 .form-heading {
   font-family: 'Kalam', cursive;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   font-size: 2.2rem;
 }
 
@@ -96,7 +96,7 @@ span {
 /* Separate form to enable glow toggle - remove padding-top */
 .glow-heading,
 .color-heading {
-  margin-bottom: 1.9rem;
+  margin-bottom: 1rem;
 }
 .outer-glow-form {
   padding-top: 0;
@@ -107,16 +107,7 @@ span {
   transform: scale(1.35);
 }
 
-.print-btn {
-  padding-left: 1.67rem;
-  padding-right: 1.67rem;
+.save-btn {
+  padding-left: 1.78rem;
+  padding-right: 1.78rem;
 }
-
-/* @media print {
-  .sidebar * {
-    display: none;
-  }
-  .grid-container * {
-    display: block;
-  }
-} */

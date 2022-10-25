@@ -25,17 +25,22 @@ body {
   background-color: #fff;
   height: 100vh;
   overscroll-behavior-y: none;
-  padding: 2.5rem;
+  padding: 2rem;
   display: flex;
 }
 
 .sidebar {
-  flex-basis: 30rem;
-  padding: 3rem 3.5rem 4rem 3.5rem;
+  flex-basis: 31.5rem;
+  padding: 2.5rem 3.5rem 2rem 3.5rem;
   display: flex;
   flex-direction: column;
   background-color: #b4f8c8;
-  gap: 2.4rem;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .grid-container {
