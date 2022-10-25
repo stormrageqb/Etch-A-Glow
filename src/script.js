@@ -137,7 +137,14 @@ const saveToPDF = () => {
   html2pdf().set(options).from(bodyEl).save();
 };
 
-const refresh = () => window.location.reload();
+const refresh = () => {
+  const confirmation = confirm('Are you sure?');
+  if (confirmation) {
+    window.location.reload();
+  } else {
+    return;
+  }
+};
 
 // Event Listeners
 appTitle.addEventListener('click', generateTitleColor);
