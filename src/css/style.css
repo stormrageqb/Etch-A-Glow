@@ -31,6 +31,7 @@
   font-size: 2.8rem;
   letter-spacing: 0.3rem;
   color: #ff143fca;
+  cursor: pointer;
 }
 
 .grid-container {

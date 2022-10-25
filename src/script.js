@@ -2,6 +2,7 @@
 
 const bodyEl = document.querySelector('body');
 const gridContainer = document.querySelector('.grid-container');
+const appTitle = document.querySelector('.app-title');
 
 // Grid Sizing:
 const rectInp = document.querySelector('.rectangle-input');
@@ -39,6 +40,9 @@ const options = {
 };
 
 // Functions
+const generateTitleColor = function () {
+  this.style.color = `${getRandomColor(colorOptions)}`;
+};
 
 // Grid Sizing
 const generateGrid = () => {
@@ -136,21 +140,23 @@ const saveToPDF = () => {
 const refresh = () => window.location.reload();
 
 // Event Listeners
-resetBtn.addEventListener('click', refresh);
+appTitle.addEventListener('click', generateTitleColor);
+
+gridSizingForm.addEventListener('input', generateGrid);
 
 gridContainer.addEventListener('mouseover', generateCellStyles);
 
 colorPaletteForm.addEventListener('input', getCellColor);
 
+colorPaletteForm.addEventListener('input', changeGapColor);
+
 rainbowCheckbox.addEventListener('change', enableRainbow);
 
 disableGlowCheckbox.addEventListener('change', enableShadows);
 
-gridSizingForm.addEventListener('input', generateGrid);
-
-colorPaletteForm.addEventListener('input', changeGapColor);
-
 saveBtn.addEventListener('click', saveToPDF);
+
+resetBtn.addEventListener('click', refresh);
 
 // Function calls
 getRandomColor(colorOptions);
