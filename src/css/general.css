@@ -40,7 +40,8 @@ body {
 }
 
 .sidebar::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+  width: 0;
 }
 
 .grid-container {
