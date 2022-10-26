@@ -4,9 +4,21 @@ This is a browser art pad inspired by the mechanical drawing toy, Etch A Sketch.
 
 ## Link
 
-Start creating something cool here:
+Start creating something cool here: https://mully7773.github.io/Etch-A-Glow/
 
 ## Screenshots
+
+![Screenshot of user-created sunset on desktop](./src/img/screenshots/desktop-sunset.png)
+
+<br>
+
+![Screenshot of user-created rainbow pattern on desktop](./src/img/screenshots/desktop-rainbow.png)
+
+<br>
+
+![Screenshot of user-created Japanese flag on mobile](./src/img/screenshots/mobile-japanese-flag.png)
+
+<br>
 
 ## Description
 
